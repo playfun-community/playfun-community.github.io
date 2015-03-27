@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: "Open Sans", sans-serif;
+}
+
+body{
+	color: #EEE;
+	background: #333;
+}
+
+header, main, footer{
+	width: 100%;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+	top: 0;
+	height: 48px;
+	background-color: #F93;
+	box-shadow: 0px 1px 4px #111;
+}
+	header #pflogo, #tslogo{
+		width: 48px;
+		height: 48px;
+		display: inline-block;
+	}
+	header nav{
+		float: right;
+		height: 100%;
+		display: inline-block;
+		overflow: hidden;
+	}
+		header nav a{
+			color: white;
+			height: 100%;
+			padding: 0 16px;
+			display: inline-block;
+			text-decoration: none;
+			text-transform: uppercase;
+			font: bold 1em "Roboto", sans-serif;
+			line-height: 48px;
+		}
+		header nav a:hover{
+			color: #00F;
+			text-shadow: 0 0 4px black;
+		}
+
+main{
+	top: -48px;
+}
+
+main section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin: 20px;
+	padding: 20px 10px;
+
+	background: rgba(33, 66, 99, 1);
+	border-radius: 10px;
+	box-shadow: 1px 1px 8px #147;
+	}
+	main section figure{
+		width: 256px;
+		height: 256px;
+		margin: 10px;
+
+		color: white;
+		line-height: 27em;
+		font-size: 1.1em;
+		font-family: "Roboto", sans-serif;
+		text-align: center;
+		text-shadow: 0 0 4px orange;
+		border-radius: 64px;
+		box-shadow: 1px 1px 8px #333;
+
+		background-size: 100% !important;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+
+
+		cursor: default;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+	main section:nth-child(4) figure{
+		border-radius: 128px;
+	}
+	main section table{
+		margin: 10px;
+		text-align: center;
+		border-collapse: collapse;
+	}
+		main section table th, section table td{
+			width: 80px;
+			border: 1px solid black;
+		}
+		main section table .black{
+			background: #090909;
+		}
+		main section th:first-child{
+			width: 100px;
+		}
+
+
+footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(#333, #111);
+}
+	footer a{
+		margin: 0 auto;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	footer #links{
+		float: right;
+		margin: 8px;
+	}
+		footer #links img{
+			margin: 4px;
+		}
+
+
+h1 {
+	color: #089;
+	margin-left: 40px;
+	text-shadow: 0 0 4px green;
+}
+p{ text-align: justify; }
+
+.fixIt{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 48px;
+}
+
+#pflogo{
+	background: url("img/logo.png") no-repeat center;
+}
+
+#tslogo{
+	background: url("img/ts_logo.png") no-repeat center;
+}
