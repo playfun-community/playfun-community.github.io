@@ -19,14 +19,10 @@ $(document).ready(function(){
 	var lastScrollTop = 0;
 	$(window).scroll(function(event){
 		var st = $(this).scrollTop();
-		if (st>60)
+		if (st>48)
 			$("nav").addClass("fixIt");
 		else
 			$("nav").removeClass("fixIt");
-		/*if (st < lastScrollTop && st > 60 )
-			$("header").addClass("fixIt");
-		else // scrollDown
-			$("header").removeClass("fixIt");*/
 		lastScrollTop = st;
 	});
 });

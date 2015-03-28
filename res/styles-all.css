@@ -52,10 +52,12 @@ header{
 		header nav a{
 			color: white;
 			height: 100%;
-			padding: 0 16px;
+			padding: 0 8px;
 			display: inline-block;
+			
 			text-decoration: none;
 			text-transform: uppercase;
+			text-shadow: 0 0 4px purple;
 			font: bold 1em "Roboto", sans-serif;
 			line-height: 48px;
 		}
