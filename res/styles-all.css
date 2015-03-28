@@ -54,7 +54,7 @@ header{
 			height: 100%;
 			padding: 0 8px;
 			display: inline-block;
-			
+
 			text-decoration: none;
 			text-transform: uppercase;
 			text-shadow: 0 0 4px purple;
@@ -164,9 +164,9 @@ p{ text-align: justify; }
 }
 
 #pflogo{
-	background: url("img/logo.png") no-repeat center;
+	background: url("img/icon/logo.png") no-repeat center;
 }
 
 #tslogo{
-	background: url("img/ts_logo.png") no-repeat center;
+	background: url("img/icon/ts.png") no-repeat center;
 }
