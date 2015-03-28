@@ -14,13 +14,3 @@ main section figure{
 		line-height: 16em;
 	}
 }
-
-/*@media (max-width: 360px){
-	main section figure{
-		width: 128px;
-		height: 128px;
-		font-size: 0.8em;
-		line-height: 18em;
-		border-radius: 32px;
-	}
-}*/
