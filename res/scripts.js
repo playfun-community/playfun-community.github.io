@@ -3,7 +3,7 @@ $(document).ready(function(){
 		this.style.background = 'url("res/img/more/'+this.title.toLowerCase()+'")';
 	});
 
-	$(function() {
+	$(function(){
 		$('a[href*=#]:not([href=#])').click(function(){
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname){
 				var target = $(this.hash);
@@ -19,10 +19,10 @@ $(document).ready(function(){
 	var lastScrollTop = 0;
 	$(window).scroll(function(event){
 		var st = $(this).scrollTop();
-		if (st>48)
-			$("nav").addClass("fixIt");
+		if (st>=48)
+			$("header nav").addClass("fixIt");
 		else
-			$("nav").removeClass("fixIt");
+			$("header nav").removeClass("fixIt");
 		lastScrollTop = st;
 	});
 });

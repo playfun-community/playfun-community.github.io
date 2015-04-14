@@ -1,12 +1,27 @@
-main section figure{
+.games figure{
 	width: 196px;
 	height: 196px;
 	font-size: 1em;
 	line-height: 22em;
 }
 
-@media (max-width: 760px) and (min-width: 360px){
-	main section figure{
+.gamers figure{
+	width: 196px;
+	height: 196px;
+	font-size: 1em;
+	line-height: 22em;
+}
+
+
+@media (max-width: 720px) and (min-width: 360px){
+	.games figure{
+		width: 128px;
+		height: 128px;
+		border-radius: 32px;
+		font-size: 0.9em;
+		line-height: 16em;
+	}
+	.gamers figure{
 		width: 128px;
 		height: 128px;
 		border-radius: 32px;
