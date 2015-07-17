@@ -2,30 +2,43 @@
 	width: 196px;
 	height: 196px;
 	font-size: 1em;
-	line-height: 22em;
+}
+.games figure figcaption{
+	position: relative;
+	top: -32px;
 }
 
 .gamers figure{
 	width: 196px;
 	height: 196px;
 	font-size: 1em;
-	line-height: 22em;
+}
+.games figure figcaption{
+	position: relative;
+	top: -32px;
 }
 
 
-@media (max-width: 720px) and (min-width: 360px){
+@media (max-width: 720px) and (min-width: 372px){
 	.games figure{
 		width: 128px;
 		height: 128px;
 		border-radius: 32px;
 		font-size: 0.9em;
-		line-height: 16em;
 	}
+	.games figure figcaption{
+		position: relative;
+		top: -32px;
+	}
+	
 	.gamers figure{
 		width: 128px;
 		height: 128px;
 		border-radius: 64px;
 		font-size: 0.9em;
-		line-height: 16em;
+	}
+	.games figure figcaption{
+		position: relative;
+		top: -32px;
 	}
 }

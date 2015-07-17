@@ -2,10 +2,6 @@ if (/*@cc_on!@*/false || !!document.documentMode)
 	window.location.assign("http://www.google.com/chrome");
 
 $(document).ready(function(){
-	$("figure").each(function(){
-		this.style.background = 'url("res/img/more/'+this.title.toLowerCase()+'")';
-	});
-
 	$(function(){
 		$('a[href*=#]:not([href=#])').click(function(){
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname){
