@@ -87,12 +87,10 @@ section{
 		background-position: center !important;
 		background-repeat: no-repeat !important;
 	}
-	section figure:hover{
+	section figure img{ height: inherit; }
+	section figure img:hover{
 		transition: 200ms all;
-		transform:  rotate(360deg);
-	}
-	section figure img{
-		height: inherit;
+		transform:  scale(1.1);
 	}
 
 
@@ -128,13 +126,14 @@ h1 {
 
 p{ text-align: justify; }
 
-.flex{
+.flex-it{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 
 	cursor: default;
+	-ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
@@ -144,27 +143,27 @@ p{ text-align: justify; }
 	padding: 20px 30px;
 }
 
-.games figure{
+#games figure{
 	margin: 10px;
 	width: 256px;
 	height: 256px;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	border-radius: 32px;
 }
 
-.games figure figcaption{
+#games figure figcaption{
 	position: relative;
 	top: -32px;
 }
 
-.gamers figure{
+#gamers figure{
 	margin: 10px;
 	width: 192px;
 	height: 192px;
 	font-size: 1.1em;
 	border-radius: 96px;
 }
-.gamers figure figcaption{
+#gamers figure figcaption{
 	position: relative;
 	top: -32px;
 }

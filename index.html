@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>PlayFun Community</title>
-	<meta chartset="UTF-8" content="text/html">
+	<meta charset="UTF-8" content="text/html">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 	<meta name="description" content="PlayFun - Portuguese multigaming community">
 	<meta name="keywords" content="Online Games Gaming Community MultiGaming">
@@ -15,6 +15,7 @@
 	<link rel="stylesheet" media="(max-width: 1200px)" href="res/styles-small.css">
 	<script src="res/jquery-2.1.3.min.js"></script>
 	<script src="res/scripts.js"></script>
+	<script src="res/ga.js"></script>
 	
 	<header>
 		<a id="pflogo" href="" alt="logo"></a>
@@ -28,137 +29,140 @@
 	
 	<main>
 		<h1 name="games" title="Every now and then, that is">The Games</h1>
-		<section class="flex games">
-			<figure title="It would be odd if we didn't play League...">
+		<section id="games" class="flex-it">
+			<figure>
 				<img src="res/img/games/league.png">
 				<figcaption>League of Legends</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/minecraft.png"></img>
 				<figcaption>Minecraft</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/csgo.png"></img>
 				<figcaption>Counter-Strike</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/tf2.png"></img>
 				<figcaption>Team Fortress 2</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/left4dead2.png"></img>
 				<figcaption>Left 4 Dead 2</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/killingfloor.png"></img>
 				<figcaption>Killing Floor</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/dayz.png"></img>
 				<figcaption>DayZ</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
+				<img src="res/img/games/aoe2.png"></img>
+				<figcaption>Age of Empires II</figcaption>
+			</figure>
+			<figure>
 				<img src="res/img/games/payday2.png"></img>
 				<figcaption>PayDay 2</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/justcause2.png"></img>
 				<figcaption>Just Cause 2</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/civilization5.png"></img>
 				<figcaption>Civilization V</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/tera.png"></img>
 				<figcaption>TERA Europe</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/runescape.png"></img>
 				<figcaption>Runescape</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/spiralknights.png"></img>
 				<figcaption>Spiral Knights</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/metin2.png"></img>
 				<figcaption>Metin2</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/games/teeworlds.png"></img>
 				<figcaption>Teeworlds</figcaption>
 			</figure>
 		</section>
 	
 		<h1 name="gamers">The Gamers</h1>
-		<section class="flex gamers">
-			<figure title="">
+		<section id="gamers" class="flex-it">
+			<figure>
 				<img src="res/img/gamers/bruno.jpg" alt="Bruno">
 				<figcaption>Bruno</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/songokio.jpg" alt="Songokio">
 				<figcaption>Songokio</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/mystic.jpg" alt="Mystic">
 				<figcaption>Mystic</figcaption>
 			</figure>
-			<br>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/eiwa.jpg" alt="Eiwa">
 				<figcaption>Eiwa</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/lost.jpg" alt="Lost">
 				<figcaption>Lost</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/skipper.jpg" alt="Skipper">
 				<figcaption>Skipper</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/migsa.jpg" alt="Migsa">
 				<figcaption>Migsa</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/meiogordo.jpg" alt="Meiogordo">
 				<figcaption>Meiogordo</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/lynx.jpg" alt="Lynx">
 				<figcaption>Lynx</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/asttaz.jpg" alt="Asttaz">
 				<figcaption>Asttaz</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/pedro.jpg" alt="Pedro">
 				<figcaption>Pedro</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/pikka.jpg" alt="Pikka">
 				<figcaption>Pikka</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/tide.jpg" alt="Tide">
 				<figcaption>Tide</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/koth.jpg" alt="Koth">
 				<figcaption>Koth</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/dounter.jpg" alt="Dounter">
 				<figcaption>Dounter</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="res/img/gamers/claster.jpg" alt="Claster">
 				<figcaption>Claster</figcaption>
 			</figure>
-			<figure title="">
+			<figure>
 				<img src="" alt="null">
 				<figcaption>tootired.png</figcaption>
 			</figure>

@@ -1,43 +1,43 @@
-.games figure{
+#games figure{
 	width: 196px;
 	height: 196px;
 	font-size: 1em;
 }
-.games figure figcaption{
+#games figure figcaption{
 	position: relative;
 	top: -32px;
 }
 
-.gamers figure{
+#gamers figure{
 	width: 196px;
 	height: 196px;
 	font-size: 1em;
 }
-.games figure figcaption{
+#games figure figcaption{
 	position: relative;
 	top: -32px;
 }
 
 
-@media (max-width: 720px) and (min-width: 372px){
-	.games figure{
+@media (max-width: 730px) and (min-width: 372px){
+	#games figure{
 		width: 128px;
 		height: 128px;
 		border-radius: 32px;
 		font-size: 0.9em;
 	}
-	.games figure figcaption{
+	#games figure figcaption{
 		position: relative;
 		top: -32px;
 	}
 	
-	.gamers figure{
+	#gamers figure{
 		width: 128px;
 		height: 128px;
 		border-radius: 64px;
 		font-size: 0.9em;
 	}
-	.games figure figcaption{
+	#games figure figcaption{
 		position: relative;
 		top: -32px;
 	}
