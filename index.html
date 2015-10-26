@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 	<meta name="description" content="PlayFun - Portuguese multigaming community">
 	<meta name="keywords" content="Online Games Gaming Community MultiGaming">
-	
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -32,27 +31,31 @@
 	</header>
 	
 	<main>
-		<h1 name="games">The Games</h1>
+		<h1 name="games">Some Games</h1>
 		<section id="games" class="flex-it" ng-controller="games-display as games">
 			<figure ng-repeat="game in games.gameList">
 				<img src="res/img/games/{{game.img}}">
 				<figcaption>{{game.name}}</figcaption>
 			</figure>
 		</section>
-	
-		<h1 name="gamers">The Gamers</h1>
+
+		<h1 name="gamers">Some Gamers</h1>
 		<section id="gamers" class="flex-it" ng-controller="gamers-display as gamers">
 			<figure ng-repeat="gamer in gamers.gamerList">
 				<img ng-src="res/img/gamers/{{gamer.img}}" alt="{{gamer.name}}">
 				<figcaption>{{gamer.name}}</figcaption>
 			</figure>
 		</section>
-	
+
 		<h1 name="rules">Guidelines</h1>
 		<section class="text">
-			<p>Respect others. Global chat isn't really a chat. Don't be noisy.</p>
+			<ul>
+				<li>Be respectful.</li>
+				<li>Do not spam. Do not be noisy.</li>
+				<li>Use the server and server chat wisely.</li>
+			</ul>
+			<sub>The complete guidelines can be found <a href="res/img/playfun-document.pdf">here</a>.</sub>
 		</section>
-
 	</main>
 	
 	<footer>
