@@ -31,7 +31,7 @@
 	</header>
 	
 	<main>
-		<h1 name="games">Some Games</h1>
+		<h1 name="games">Some Games we play</h1>
 		<section id="games" class="flex-it" ng-controller="games-display as games">
 			<figure ng-repeat="game in games.gameList">
 				<img src="res/img/games/{{game.img}}">
@@ -39,7 +39,7 @@
 			</figure>
 		</section>
 
-		<h1 name="gamers">Some Gamers</h1>
+		<h1 name="gamers">Some Gamers that feed</h1>
 		<section id="gamers" class="flex-it" ng-controller="gamers-display as gamers">
 			<figure ng-repeat="gamer in gamers.gamerList">
 				<img ng-src="res/img/gamers/{{gamer.img}}" alt="{{gamer.name}}">

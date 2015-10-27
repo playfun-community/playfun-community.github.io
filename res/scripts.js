@@ -12,14 +12,10 @@ $(document).ready(function(){
 		});
 	});
 
-	var lastScrollTop = 0;
 	$(window).scroll(function(event){
 		var st = $(this).scrollTop();
-		if (st>=48)
-			$("header nav").addClass("fixIt");
-		else
-			$("header nav").removeClass("fixIt");
-		lastScrollTop = st;
+		if (st>=48) $("header nav").addClass("fixIt");
+		else $("header nav").removeClass("fixIt");
 	});
 });
 
