@@ -4,24 +4,24 @@
 	<title>PlayFun Community</title>
 	<meta charset="UTF-8" content="text/html">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-	<meta name="description" content="PlayFun - Portuguese multigaming community">
+	<meta name="description" content="PlayFun - A portuguese multigaming community.">
 	<meta name="keywords" content="Online Games Gaming Community MultiGaming">
+
 	<link rel="shortcut icon" href="favicon.ico">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="res/styles-all.css">
+	<link rel="stylesheet" href="res/styles-small.css" media="(max-width: 1200px)">
 </head>
 
 <body>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="res/styles-all.css">
-	<link rel="stylesheet" media="(max-width: 1200px)" href="res/styles-small.css">
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 	<script src="res/scripts.js"></script>
 	<script src="res/ga.js"></script>
 	
 	<header>
-		<a id="pflogo" href="" alt="logo"></a>
+		<a id="pflogo" href=""></a>
 		<a id="tslogo" href="ts3server://ts.playfun.pt" title="Join TS server!"></a>
 		<nav>
 			<a href="#games">Games</a>
@@ -34,7 +34,7 @@
 		<h1 name="games">Some Games we play</h1>
 		<section id="games" class="flex-it" ng-controller="games-display as games">
 			<figure ng-repeat="game in games.gameList">
-				<img src="res/img/games/{{game.img}}">
+				<img ng-src="res/img/games/{{game.img}}">
 				<figcaption>{{game.name}}</figcaption>
 			</figure>
 		</section>
@@ -61,11 +61,21 @@
 	<footer>
 		<nav>
 			<span>Find us at: </span>
-			<a title="TeamSpeak" href="ts3server://ts.playfun.pt"><img src="res/img/icon/ts.png"></a>
-			<a title="Forums" href="http://w11.zetaboards.com/PlayFun/"><img src="res/img/icon/logo.png"></a>
-			<a title="Steam" href="https://steamcommunity.com/groups/playfun_pt"><img src="res/img/icon/steam.png"></a>
-			<a title="Reddit" href="https://www.reddit.com/r/playfun"><img src="res/img/icon/reddit.png"></a>
-			<a title="Facebook" href="https://www.facebook.com/groups/playfun.pt/"><img src="res/img/icon/fb.png"></a>
+			<a title="TeamSpeak" href="ts3server://ts.playfun.pt">
+				<img src="res/img/icon/ts.png" alt="ts">
+			</a>
+			<a title="Forums" href="http://w11.zetaboards.com/PlayFun/">
+				<img src="res/img/icon/logo.png" alt="logo">
+			</a>
+			<a title="Steam" href="https://steamcommunity.com/groups/playfun_pt">
+				<img src="res/img/icon/steam.png" alt="steam">
+			</a>
+			<a title="Reddit" href="https://www.reddit.com/r/playfun">
+				<img src="res/img/icon/reddit.png" alt="reddit">
+			</a>
+			<a title="Facebook" href="https://www.facebook.com/groups/playfun.pt/">
+				<img src="res/img/icon/fb.png" alt="fb">
+			</a>
 		</nav>
 	</footer>
 </body>
