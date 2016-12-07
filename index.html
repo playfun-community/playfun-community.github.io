@@ -1,83 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="playfun">
+<html lang="en">
 <head>
 	<title>PlayFun Community</title>
 	<meta charset="UTF-8" content="text/html">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-	<meta name="description" content="PlayFun - A portuguese multigaming community.">
-	<meta name="keywords" content="Online Games Gaming Community MultiGaming">
-
+	<meta name="description" content="PlayFun: A Portuguese multigaming community!">
+	<meta name="keywords" content="PlayFun Portugal Madeira Online Games Gaming Community MultiGaming">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-	<link rel="stylesheet" href="res/styles-all.css">
-	<link rel="stylesheet" href="res/styles-small.css" media="(max-width: 1200px)">
 </head>
 
 <body>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-	<script src="res/scripts.js"></script>
-	<script src="res/ga.js"></script>
-	
-	<header>
-		<a id="pflogo" href=""></a>
-		<a id="tslogo" href="ts3server://ts.playfun.pt" title="Join TS server!"></a>
-		<nav>
-			<a href="#games">Games</a>
-			<a href="#gamers">Gamers</a>
-			<a href="#rules">Rules</a>
-		</nav>
-	</header>
-	
-	<main>
-		<h1 name="games">Some Games we play</h1>
-		<section id="games" class="flex-it" ng-controller="games-display as games">
-			<figure ng-repeat="game in games.gameList">
-				<img ng-src="res/img/games/{{game.img}}">
-				<figcaption>{{game.name}}</figcaption>
-			</figure>
-		</section>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="res/styles-all.css">
+<link rel="stylesheet" href="res/styles-small.css" media="(max-width: 1200px)">
 
-		<h1 name="gamers">Some Gamers that feed</h1>
-		<section id="gamers" class="flex-it" ng-controller="gamers-display as gamers">
-			<figure ng-repeat="gamer in gamers.gamerList">
-				<img ng-src="res/img/gamers/{{gamer.img}}" alt="{{gamer.name}}">
-				<figcaption>{{gamer.name}}</figcaption>
-			</figure>
-		</section>
+<header>
+	<a id="pflogo" href=""></a>
+	<a id="tslogo" href="ts3server://ts.playfun.pt" title="Join TS server!"></a>
+	<nav>
+		<a href="#games">Games</a>
+		<a href="#gamers">Gamers</a>
+		<a href="#rules">Rules</a>
+	</nav>
+</header>
 
-		<h1 name="rules">Guidelines to follow</h1>
-		<section class="text">
-			<ul>
-				<li>Be respectful.</li>
-				<li>Do not spam. Do not be noisy.</li>
-				<li>Use the server and server chat wisely.</li>
-			</ul>
-			<sub>The complete guidelines can be found <a href="res/pfdoc.pdf">here</a>.</sub>
-		</section>
-	</main>
-	
-	<footer>
-		<nav>
-			<span>Find us at: </span>
-			<a title="TeamSpeak" href="ts3server://ts.playfun.pt">
-				<img src="res/img/icon/ts.png" alt="ts">
-			</a>
-			<a title="Forums" href="http://w11.zetaboards.com/PlayFun/">
-				<img src="res/img/icon/logo.png" alt="logo">
-			</a>
-			<a title="Steam" href="https://steamcommunity.com/groups/playfun_pt">
-				<img src="res/img/icon/steam.png" alt="steam">
-			</a>
-			<a title="Reddit" href="https://www.reddit.com/r/playfun">
-				<img src="res/img/icon/reddit.png" alt="reddit">
-			</a>
-			<a title="Facebook" href="https://www.facebook.com/groups/playfun.pt/">
-				<img src="res/img/icon/fb.png" alt="fb">
-			</a>
-		</nav>
-	</footer>
-</body>
-</html>
+<main>
+	<h1 name="games">Some Games we play</h1>
+	<section id="games" class="flex-it"></section>
 
+	<h1 name="gamers">Some Gamers that feed</h1>
+	<section id="gamers" class="flex-it"></section>
+
+	<h1 name="rules">Guidelines to follow</h1>
+	<section class="text">
+		<ul>
+			<li>Be respectful.</li>
+			<li>Do not spam. Do not be noisy.</li>
+			<li>Use the server and server chat wisely.</li>
+		</ul>
+		<sub>The complete guidelines can be found <a href="res/pfdoc.pdf">here</a>.</sub>
+	</section>
+</main>
+
+<footer>
+	<nav>
+		<span>Find us at: </span>
+		<a title="TeamSpeak" href="ts3server://ts.playfun.pt">
+			<img src="res/img/icon/ts.png" alt="ts">
+		</a>
+		<a title="Forums" href="http://w11.zetaboards.com/PlayFun/">
+			<img src="res/img/icon/logo.png" alt="logo">
+		</a>
+		<a title="Steam" href="https://steamcommunity.com/groups/playfun_pt">
+			<img src="res/img/icon/steam.png" alt="steam">
+		</a>
+		<a title="Reddit" href="https://www.reddit.com/r/playfun">
+			<img src="res/img/icon/reddit.png" alt="reddit">
+		</a>
+		<a title="Facebook" href="https://www.facebook.com/groups/playfun.pt/">
+			<img src="res/img/icon/fb.png" alt="fb">
+		</a>
+	</nav>
+</footer>
+<script async src="res/scripts.js"></script>
